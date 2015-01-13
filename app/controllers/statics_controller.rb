@@ -1,7 +1,6 @@
 class StaticsController < ApplicationController
   
   def about 
-    download
   end
   
   def resume
