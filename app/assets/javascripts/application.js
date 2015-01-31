@@ -16,9 +16,3 @@
 //= require turbolinks
 //= require_tree .
 
-
-$(function(){
-	$(document).ready(function(){
-		$('p').addClass('red');
-	})
-});

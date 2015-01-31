@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  root to: 'statics#about'
+  root to: 'statics#welcome'
   
   
   # The priority is based upon order of creation: first created -> highest priority.
