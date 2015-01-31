@@ -4,5 +4,8 @@ $(document).ready(function(){
 	
 	$('.jumbotron').css('height', jumbHeight);
 	
+	$('.jumbotron').append('<button> press me </button>');
+	
+	
 	
 });
