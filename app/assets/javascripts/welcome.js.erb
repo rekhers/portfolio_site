@@ -11,12 +11,28 @@ $(document).ready(function(){
 	 
 	$('button').each(function() { 
 		var cl = $(this).attr('class');
-		$('button.' + cl).click(function(){
-			//add siblings shit
+		var this_button = $('button.' + cl);
+		var this_item = $('.section' + cl);
+		this_button.click(function(){
 			
-			$('button.' + cl).toggleClass('active');
-			$('#' + cl).toggleClass('hidden');
-
+		
+		if(this_button.siblings().hasClass('active')){
+			
+			this_button.siblings().removeClass('active');
+			$('.section').addClass('hidden');
+			this_button.addClass('active');
+			$('#' + cl).removeClass('hidden');
+					
+				}
+		
+		
+		//first click
+		else{
+			this_button.addClass('active');
+			$('#' + cl).removeClass('hidden');
+			
+		}
+		
 		});
 	
 	});
