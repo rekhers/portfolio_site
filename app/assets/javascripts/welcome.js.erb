@@ -1,0 +1,25 @@
+$(document).ready(function(){
+	$('.section').addClass('hidden');
+	
+	var section = $('.section');
+	
+	windHeight = $(window).innerHeight();
+	windWidth = $(window).innerWidth();
+	$('#main-container').css('height', windHeight);
+	$('#main-container').css('width', windWidth);
+	$('#resume').css('width', windWidth);
+	 
+	$('button').each(function() { 
+		var cl = $(this).attr('class');
+		$('button.' + cl).click(function(){
+			//add siblings shit
+			
+			$('button.' + cl).toggleClass('active');
+			$('#' + cl).toggleClass('hidden');
+
+		});
+	
+	});
+	
+	
+});

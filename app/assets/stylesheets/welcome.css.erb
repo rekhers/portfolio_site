@@ -1,8 +1,34 @@
+.container-fluid{
+	background-image: url(<%= asset_path 'footer_lodyas.png'%>);
+}
+
+
 .jumbotron{
 	background-color:#393566;
 	color:#FAFAFA;
-	margin-right:20px;
+	margin-top: 10px;
+	position: relative;
+	
 }
+
+@-webkit-keyframes bounce {
+	from {
+		margin-left: 0px;
+	}
+	to {
+		margin-left: 320px;
+	}
+ }
+
+
+.glyphicon:hover {
+	-webkit-animation-name: bounce;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 2;
+	-webkit-animation-direction: alternate;
+  }
+
+
 
 .glyphicon{
 	margin-right:auto;
@@ -11,4 +37,22 @@
 	font-size:40px;
 	padding-right:20px;
 	color: gray;
+	animation: bounce;
+}
+
+.active{
+	color: white;
+}
+
+button{
+	background-color:black;
+	color: gray;
+	border-radius: 15px;
+	height: 50px;
+	width: 120px;
+	border: 1px solid #393566;
+}
+
+button:hover {
+    color: white;
 }
