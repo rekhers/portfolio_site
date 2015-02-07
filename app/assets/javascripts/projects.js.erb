@@ -1,9 +1,8 @@
-
 $(document).ready(function(){
-	windWidth = $(window).innerWidth();
-	$('.container-fluid').css('width', windWidth)
-
-	jumbWidth = $('.jumbotron').innerWidth();
-	$('#proj-box').css('width', jumbWidth);
+	navHeight = $('#navbar').innerHeight();
+	$('#proj-box').css('margin-top', navHeight);
+	
+	windHeight = $(window).innerHeight();
+	$('#proj-box').css('height', windHeight);
 	
 });
