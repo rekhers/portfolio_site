@@ -1,16 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
+<body>
 
-
-
-
-		<div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+		<div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="row">
-
-				<ul class="nav navbar-nav">
 			        <a class="navbar-brand" href="#about">Rekha Tenjarla</a>
+
 					
-				 
+ 				<ul class="nav navbar-nav">
 				  <li><a href="#resume"> resume </a> </li>
 				  <li> <a href="#projects">projects </a> </li>
 				  <li> <a href="#blog"> contact </a></li>
@@ -28,29 +30,38 @@
 	
 	
 	
-	<div id="page1">
 	<div id="about" class="section">
 	<%= render "about" %>
 	</div>
+
+<div id="bigger" class="section">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="col-md-12">
+				<div id="desc">
+
+
+			</div>
 </div>
-	
-	<div id="page2">
+</div>
+</div>
+</div>	
+
+
+
 	<div id="resume" class="section">
 	<%= render "resume" %>
 	</div>
-</div>
 	
 	
-	<div id="page3">
 	<div id="projects" class="section">
 	<%= render "projects" %>
 	</div>
-</div>
 	
-	<div id="page 4">
-	<div id="blog" class="section">
+	
+	<div id="blog">
 	<%= render "blog" %>
 	</div>
-</div>
 	
-
+</body>
+</html>
