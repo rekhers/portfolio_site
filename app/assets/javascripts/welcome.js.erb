@@ -1,16 +1,23 @@
 
-//
-// $(document).ready(function(){
-//
-// 	windHeight = $(window).innerHeight();
-// 	$('.section').css('height', windHeight);
-//
-//
-// 	$('#about').css("height", 50%);
-// 	$('#desc').css("height", 500);
-//
-//
-// });
+
+$(document).ready(function(){
+
+	windHeight = $(window).innerHeight();
+	$('.section').css('height', windHeight);
+	projHeight = windHeight - 100;
+	$('#proj-box').css("height", projHeight);
+	
+	half = windHeight/2;
+
+	$('#about').css("height", half);
+	
+	aboutHeight = $('#about').css('height');
+	$('#bigger').css("height", aboutHeight);
+	$('#bigpurple').css("height", aboutHeight);
+	$('#blackbox').css("height", aboutHeight);
+	$('#blog').css('height', aboutHeight);
+
+});
 
 
 
