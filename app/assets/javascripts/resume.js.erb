@@ -1,11 +1,7 @@
-
 $(document).ready(function(){
-	windWidth = $(window).innerWidth();
-	$('.container-fluid').css('width', windWidth)
 	
-	jumbWidth = $('.jumbotron').innerWidth();
-	$('#res-box').css('width', jumbWidth);
-
-
-
+	margHeight = $('#navbar').innerHeight()-50;
+	$('#res-box').css("margin-top", margHeight);
+	
+	
 });

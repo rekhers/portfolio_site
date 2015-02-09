@@ -1,46 +1,24 @@
+
+
 $(document).ready(function(){
-	$('.section').addClass('hidden');
-	
-	var section = $('.section');
-	
+
 	windHeight = $(window).innerHeight();
-	windWidth = $(window).innerWidth();
+	$('.section').css('height', windHeight);
+	projHeight = windHeight - 100;
+	$('#proj-box').css("height", projHeight);
 	
+	half = windHeight/2;
+
+	$('#about').css("height", half);
 	
-	// jumbWidth = $('.jumbotron').innerWidth();
-	// $('.section').css('width', jumbWidth);
-	
-	$('#main-container').css('height', windHeight);
-	$('#main-container').css('width', windWidth);
-	$('#resume').css('width', windWidth);
-	 
-	$('button').each(function() { 
-		var cl = $(this).attr('class');
-		var this_button = $('button.' + cl);
-		var this_item = $('.section' + cl);
-		this_button.click(function(){
-			
-		
-		if(this_button.siblings().hasClass('active')){
-			
-			this_button.siblings().removeClass('active');
-			$('.section').addClass('hidden');
-			this_button.addClass('active');
-			$('#' + cl).removeClass('hidden');
-					
-				}
-		
-		
-		//first click
-		else{
-			this_button.addClass('active');
-			$('#' + cl).removeClass('hidden');
-			
-		}
-		
-		});
-	
-	});
-	
-	
+	aboutHeight = $('#about').css('height');
+	$('.black-panel').css('height', aboutHeight)
+	$('#blog').css('height', aboutHeight);
+
 });
+
+
+
+
+
+
