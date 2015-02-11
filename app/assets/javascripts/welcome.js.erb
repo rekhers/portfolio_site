@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	windHeight = $(window).innerHeight();
 	$('.section').css('height', windHeight);
-	projHeight = windHeight - 100;
+	projHeight = windHeight - 140;
 	$('#proj-box').css("height", projHeight);
 	
 	half = windHeight/2;
@@ -14,6 +14,10 @@ $(document).ready(function(){
 	aboutHeight = $('#about').css('height');
 	$('.black-panel').css('height', aboutHeight)
 	$('#blog').css('height', aboutHeight);
+	
+	$('#contact').css('background-color', 'black');
+	$('.fa').css('color', 'white');
+	
 
 });
 
