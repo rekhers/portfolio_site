@@ -8,6 +8,8 @@
 
 
 
+
+
 		<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="row">
@@ -40,25 +42,16 @@
 
 	
 	
-	
-	
-	
-	<div id="about" class="section">
+	<div id="about">
 	<%= render "about" %>
 	</div>
 
-<div id="black-panel-1" class="black-panel">
-	<div class="container-fluid">
-		<div class="row-fluid">
-			<div class="col-md-12">
-				<div id="desc1" class="desc">
-				<h1 id="desc-text1"> Recent graduate, self-taught developer, and tex-mex enthusiast seeking a front-end or fullstack position. </h1>
-						
-			</div>
-</div>
-</div>
-</div>
-</div>	
+
+	
+	<div id="panel1">
+		<%= render "panel1"%>
+	</div>
+
 
 
 
@@ -68,10 +61,10 @@
 	
 	
 	
-	<div id="black-panel-2" class="black-panel">
-		<div class="container-fluid">
+	
+	<div class="container-fluid">
 			<div class="row-fluid">
-				<div class="col-md-12">
+				<div class="col-md-12 black-panel" id="panel-2">
 					<div id="desc2" class="desc">
 					<h1 id="desc2-text"> I'm passionate about interdisciplinary, 						socially-relevant projects and I'm commited to perpetual self-education </h1>
 						
@@ -79,49 +72,21 @@
 				</div>
 				</div>
 				</div>
-				</div>
+	
 	
 	
 	<div id="projects" class="section">
 	<%= render "projects" %>
 	</div>
-	
+
+
 
 <!--  TODO: Fix current hacky solutions of not being able to style fa icons normally-->
 		<div id="contact-bar">
-		<div class="container-fluid" id="contact">
 			
-			<div class="row-fluid">
-				
+			<%= render "contact" %>
 			
-				
-				<div class="col-md-3" id="twitter">
-					
-				
-							<h3><a id="twitter" class="links" href="http://www.twitter.com/rekhers"><i class="fa fa-twitter-square fa-5x"></i></a></h3>
-							
-						</div>
-						
-						<div class="col-md-3" id="linkedin">
-						
-							<h3><a id="linkedin" class="links" href="http://www.linkedin.com/in/rekhatenjarla"><i class="fa fa-linkedin-square fa-5x"></i></a> </h3>
-							
-						</div>
-						
-						<div class="col-md-3" id="twitter">
-						
-						
-							<h3><a id="github"  class="links" href="http://www.github.com/rekhers"><i class="fa fa-github fa-5x">  </i></a>
-						</h3>
-					</div>
-					
-					
-
-
-	</div>
-	</div>
-</div>
-	
+		</div>
 	
 	
 	

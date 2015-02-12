@@ -1,28 +1,14 @@
-
-
 $(document).ready(function(){
+	
+	$('#about-box').hover(function(){
+		$(this).toggleClass('black-panel');
+		$(this).toggleClass('purple');
+		$('#panel-1-box').toggleClass('purple');
+		$('#panel-1-box').toggleClass('black-panel');
+	
+	});
+	
 
-	windHeight = $(window).innerHeight();
-	$('.section').css('height', windHeight);
-	projHeight = windHeight - 140;
-	$('#proj-box').css("height", projHeight);
-	
-	half = windHeight/2;
 
-	$('#about').css("height", half);
-	
-	aboutHeight = $('#about').css('height');
-	$('.black-panel').css('height', aboutHeight)
-	$('#blog').css('height', aboutHeight);
-	
-	$('#contact').css('background-color', 'black');
-	$('.fa').css('color', 'white');
-	
 
 });
-
-
-
-
-
-
