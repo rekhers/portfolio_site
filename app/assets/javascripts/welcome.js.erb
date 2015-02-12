@@ -1,14 +1,12 @@
 $(document).ready(function(){
-	
-	$('#about-box').hover(function(){
-		$(this).toggleClass('black-panel');
-		$(this).toggleClass('purple');
-		$('#panel-1-box').toggleClass('purple');
-		$('#panel-1-box').toggleClass('black-panel');
-	
-	});
-	
 
-
+	windHeight = $(window).innerHeight();
+	
+	windHalf = windHeight/2;
+	$('#about-box').css('height', windHalf);
+	$('#panel-1-box').css('height', windHalf);
+	$("#panel-2").css('height', windHalf);
+	
+	
 
 });
