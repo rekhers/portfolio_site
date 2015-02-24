@@ -1,6 +1,6 @@
 class StaticsController < ApplicationController
   
-  def about 
+  def welcome 
   end
   
   def resume
