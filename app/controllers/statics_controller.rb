@@ -1,18 +1,13 @@
 class StaticsController < ApplicationController
+  respond_to :html, :json
   
-  def welcome 
+  def index 
+      
   end
   
-  def resume
+  def load
+    $data = File.read("app/public/tx-counties.geojson")
+      render :json => $data
   end
   
-  def blog
-  end
-  
-  
-  def projects
-  end
-  
-   
-   
 end

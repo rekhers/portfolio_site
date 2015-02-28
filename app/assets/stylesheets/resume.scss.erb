@@ -6,13 +6,17 @@ $grayish:#F8F8F8;
 
 
 #header{
-	color: $purple-theme;
+	color: black;
 	margin-left: 10px;
 }
 
 
+
+
 .res-heading{
-	color: $purple-theme;
+	color: $turquoise;
+	text-shadow:-3px 3px 2px $purple-theme;
+	font-family:Oswald;
 }
 
 .top{
@@ -21,13 +25,20 @@ $grayish:#F8F8F8;
 }
 
 #res-box{
-	padding-top:3%;
+	padding-top:0%;
+	margin-top:-2%;
+	overflow:auto;
+	&:not(.res-heading){
+		font-family:Roboto;
+	}
+	
 }
+
 
 #work-exp{
 	margin-bottom:5%;
 	padding-left: 35px;
-	border-left: 1px solid black;
+	border-left: 1px solid #FFF;
 	
 }
 
@@ -43,6 +54,6 @@ span{
 	margin-bottom:5%;
 	
 	padding-left:10%;
-	border-top:1px solid black;
+	border-top:1px solid #FFF;
 	margin-top:30px;
 }

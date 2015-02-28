@@ -2,57 +2,126 @@
 
 @import url(http://fonts.googleapis.com/css?family=Oswald:500,100,400);
 
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,800,900);
+$purple-theme: #393566;
+$turquoise:#009991;
+$grayish:#F8F8F8;
+$other-turq:rgba(38, 160, 106, 0.9);
 
-*{
-   background-color: rgba(38, 160, 106, 0.9);
-  }
-
-
-
-#header{
-  font-family: Roboto Slab;
-  color: rgba(207, 44, 51, 0.7);
-  font-size:70px;
-  text-align:center;
-  text-shadow: -3px 2px 8px gray;
-  margin-bottom:5px;
-  margin-top:90px;
-
-    &:after{
-    margin-top:10px;
-    margin-left:10%;
-    margin-right:10%;
-    content:'';
-    background-color:gray;
-    height:3px;
-    border-radius:25%;
-    display:block;
-    width:80%;
-  }
- }
+//background-color: rgba(38, 160, 106, 0.9);
+//  color: rgba(207, 44, 51, 0.7);
 
 
-ul{
-  display:inline-block;
-  margin-top: 10px;
-  font-family: Oswald;
-  font-size:25px;
-  margin-left:32%;
+
+
+  #main{
+	  background-color:#fff;
+	  border-bottom:2px solid #fff;
+	  
 }
 
 
-
-a{
-  text-decoration: none;
-  color:black;
+#body{
+	height:100%;
+}
   
-  &:hover{
+
+::selection {
+  background: $turquoise; /* WebKit/Blink Browsers */
+}
+
+#main-header{
+	color:transparent;
+  	font-family: Raleway;
+	background: url("http://www.jpl.nasa.gov/spaceimages/images/mediumsize/PIA16884_ip.jpg") repeat;
+    -webkit-background-clip: text;
+ 	background-position: 20% 30%;
+	
+  	
+  font-weight:800;
+  font-size:140px;
+  text-align:center;
+  display:block;
+  margin-bottom:5px;
+  margin-top:2%;
+
+    &:after{
+    margin-top:10px;
+    margin-left:15%;
+    margin-right:15%;
+    content:'';
+    background-color:#292B2E;
+    height:3px;
+    border-radius:25%;
+    display:block;
+    width:70%;
+  }
+  
+ }
+
+  h1{
+	  color: black;
+	  
+  }
+  
+
+  
+  
+  
+  //partials and global content stuff
+  
+  #about{
+	  margin-top: 2%;
+	  
+  }
+
+
+  #welcome{
+      font-family: Roboto Slab;
+      font-size: 30px;
+  }
+
+  .text-col{
+	  width:80%;
+  	  padding-bottom:5%;
+	  margin-left:10%;
+	  padding-top:5%;
+	  
+  }
+
+ .content{
+    margin-left: 10%;
+    padding-left: 30%;
+	color:#FFF;
+	background-color:#292B2E;
+
+  }
+
+
+
+
+ //custom buttons -- clean this up
+
+ul:not(.res-lists){
+  display:inline-block;
+  margin-top: 10px;
+  font-family: Roboto;
+  font-size:25px;
+  margin-left:25%;
+  color:black;
+}
+
+
+ul a.btns{
+  padding:7px;
+  color:black;
+  text-decoration:none;
+  text-shadow:-2px 2px 3px $purple-theme;
+  
+&:hover{
       text-transform:uppercase;
       font-size:30px;
-      text-shadow: -1px 1px 3px #FFF;
-
   } 
-  
   
   
 }
@@ -60,26 +129,96 @@ a{
 .active{
       text-transform:uppercase;
        font-size:30px;
-        text-shadow: -1px 1px 3px #FFF;
+ 	  text-shadow:-2px 2px 3px $purple-theme;
 
 }
 
-li{
+
+
+#custom-btns li{
+	margin-top:2%;
+	margin-bottom:2%;
+	
   list-style-type: none;
   display:inline-block;
   position: relative;
-  padding-right:50px;
+  padding-right:45px;
 }
 
-#content{
-  height:500px;
-  width: 1000px;
-  margin-left: 10%;
-  border: 1px solid black;
-  padding-top: 2%;
-  padding-left: 30px;
-  font-family: Roboto Slab;
-  font-size: 30px;
+
+
+//FOOTER STYLES
+
+#intouch{
+	color:white;
+	font-family: Oswald;
+	margin-left:40%;
 }
+
+#nav{
+	background-color:gray;
+	height:2%;
+	.fa{
+		display:none;
+	}
+	
+	#intouch{
+		font-size:30px;
+		margin-top:2%;
+	}
+	&:hover{
+		height:20%;
+		#intouch{
+			display:inline-block;
+			font-size:40px;
+			margin-top:10%;
+			
+		}
+		.fa{
+			display:inline-block;
+		}
+	}
+}
+ 	 
+
+
+
+//glyphicon styles
+
+
+#twitter-tag{
+	margin-left:8%;
+}
+.tag{
+	margin-top:2%;
+	color:#FFF;
+	font-size:15px;
+	font-family:Roboto;
+	padding-left:0%;
+	margin-left:-10%;
+
+	
+}
+
+.hidden{
+	display:none;
+}
+
+
+.fa{
+	text-align:justify;
+	color:white;
+	margin-top:10%;
+	padding-left:5%;
+	padding-top:2%;
+	margin-left:4%;
+	&:hover{
+		color:rgba(38, 160, 106, 0.9);
+	
+		}
+		
+}
+
+
 
 

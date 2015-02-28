@@ -1,41 +1,48 @@
 	
-	<div class="container-fluid gray">
+	<div class="container-fluid gray hidden" id="p-b">
 	
 	<div class="row-fluid">
 		
 		
-		
-		
+	
 		
 			
 		<div class="col-md-6" id="tweets-usa">
 		
-			<div class="panel panel-default">
-				<div class="panel-heading" id="tex-header"> <h3> Tweets USA </h3> </div>
-					<div class="panel-body">
-			<h5>	Using node.js and socket.io to push tweets to a US map in real time! </h5> <br>
+				<div class="res-heading"> <h1> Tweets USA </h1> </div>
+			<p id="tw-desc">	Using node.js and socket.io to push tweets to a US map in real time! </p> <br>
 				
 				<div id="tweet-screenshot">
 					<a href="http://tweets-usa.herokuapp.com/">
 					
-					<%= image_tag('tweets-usa-screenshot.png', class:"img-responsive") %>
-						
-						
-				</a>
+					<%= image_tag('tweets-usa-screenshot.png', class:"img-responsive") %>			
+					</a>
 				</div>
 				<br>
-				<p> Demo: <a href="http://tweets-usa.herokuapp.com/">  http://tweets-usa.herokuapp.com/ </a></p> 
-				<p> Github: <a href="https://github.com/rekhers/tweets_USA"> https://github.com/rekhers/tweets_USA </a></p>
 				
+				
+				<div id="tw-links" class="col-md-3">
+					<div id="demo-link">
+				<p>  <a href="http://tweets-usa.herokuapp.com/">  Demo </a></p>
+				
+				
+			</div>
+			
+			<div id="code" class="col-md-3">
+				<p> <a href="https://github.com/rekhers/tweets_USA"> Source Code </a></p>
+				
+				<i class="fa fa-github fa-4x"></i>
+				
+			</div>
+			</div>
 				
 			 </div> 
 			  </div>
 			  
-		  		</div>
 			
 		
 			
-		</div>
+	
 		
 	
 	
@@ -44,50 +51,17 @@
 
 	
 	<div class="col-md-6" id="work-now">
-		
-		<h1 id="current"> currently I'm working on: </h1> <br>
-		
-	
-		<div class="col-md-4" id="tex">
-
-
-
-		
-			
-			
-			<div class="panel panel-default">
-				<div class="panel-heading" id="tex-header"> <h5> Texas Gubernatorial Race 2014 Map </h5></div>
-					<div class="panel-body">
-				  Using Google Fusion Tables to compare demographic data with electoral results 					</div> 
-			  </div>
-				  
-		  		</div>
-				  
-				  
-		  		<div class="col-md-4" id="wicked">
-				  
-				  
-	  			<div class="panel panel-default">
-	  				<div class="panel-heading" id="wicked-header"> <h5> Wicked Twitta! </h5> </div>
-	  					<div class="panel-body">
-	  				 Data visualization of where "wicked" is most frequently used in the United States with a part of speech tagger that determines whether it's being used as an adjective or adverb  					</div> 
-	  			  </div>
-				</div>
-				
-				<div class="col-md-4" id="haskell">
-				
-				
-				<div class="panel panel-default">
-					<div class="panel-heading" id="haskell-header"> <h5> Learning functional programming </h5></div>
-						<div class="panel-body">
-					 Building a lambda calculus evaluator in Haskell					
-				 	</div> 
-				  </div>
-				  
-		
-			
+		<div class="res-heading"> <h1> Texas Maps with d3.js </h1> </div>
+		<div id="tex-desc"><p> I'm currently teaching myself d3 by building a series of data visualizations that combine geoJSON (to draw county lines) with US census data </p>
 		</div>
+		<div id="tex-screenshot">
+		<%= image_tag('d3tx.png', class:"img-responsive") %>			
+	</div>
+		<h2 id="coming-soon"> Coming Soon! </h2>
+	
 		
-		
+				</div>
+	
+	
 </div>
 </div>
