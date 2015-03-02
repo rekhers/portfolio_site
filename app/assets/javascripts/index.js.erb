@@ -2,30 +2,10 @@ $(document).ready(function(){
 
 
 	windHeight = $(window).innerHeight();
-	mainHeight = $("#main").innerHeight();
-	fillHeight = windHeight - mainHeight;
+	mainHeight = $('#main').innerHeight();
+	fillHeight = windHeight - mainHeight-60;
 	$('#about-box').css('height', fillHeight);
-	
-	
-	$('#twitter').hover(function(){
-		$('#twitter-tag').toggleClass('hidden');
-		
-	});
-	
-	$('#linkedin').hover(function(){
-		$('#linkedin-tag').toggleClass('hidden');
-		
-	});
-	
-	$('#github').hover(function(){
-		$('#github-tag').toggleClass('hidden');
-		
-	});
-	
-	$('#email').hover(function(){
-		$('#email-tag').toggleClass('hidden');
-		
-	});
+	$('#contact-bar').css('height', fillHeight);
 	
 	
 	$('#res-btn').click(function(){
@@ -35,6 +15,8 @@ $(document).ready(function(){
 		$('#about-btn').removeClass('active');
 		$('#res-box').removeClass('hidden');
 		$('#res-btn').addClass('active');
+		$('#contact-bar').addClass('hidden');
+		$('#contact-btn').removeClass('active');
 		
 		
 	});
@@ -46,19 +28,42 @@ $(document).ready(function(){
 		$('#about-btn').addClass('active');
 		$('#proj-btn').removeClass('active');
 		$('#res-btn').removeClass('active');
+		$('#contact-bar').addClass('hidden');
+		$('#contact-btn').removeClass('active');
+		
 		
 	});
 	
+	
+
 	
 	$('#proj-btn').click(function(){
 		$('#p-b').removeClass('hidden');
 		$('#about-box').addClass('hidden');
 		$('#res-box').addClass('hidden');
+		$('#contact-bar').addClass('hidden');
+		
 		$("#proj-btn").addClass('active')
 		$('#res-btn').removeClass('active');
 		$('#about-btn').removeClass('active');
+		$('#contact-btn').removeClass('active');
+		
 		
 	});
+	
+	$('#contact-btn').click(function(){
+		$('#contact-bar').removeClass('hidden');
+		$('#about-box').addClass('hidden');
+		$('#res-box').addClass('hidden');
+		$("#p-b").addClass('hidden');
+		
+		$("#proj-btn").removeClass('active')
+		$('#res-btn').removeClass('active');
+		$('#about-btn').removeClass('active');
+		$('#contact-btn').addClass('active');
+		
+	});
+	
 	
 	
 	  var mouseX, mouseY;
@@ -68,8 +73,8 @@ $(document).ready(function(){
 	  $('#main-header').mousemove(function(e){
 	    mouseX = e.pageX;
 	    mouseY = e.pageY;
-	    moveX = ((4 * mouseX) / 90) + 40;
-	    moveY = ((4 * mouseY) / 90) + 50;
+	    moveX = ((4 * mouseX) / 87) + 40;
+	    moveY = ((4 * mouseY) / 87) + 50;
 	    $("#main-header").css({"background-position": moveX + "%" + moveY + "%"});
 	  });
 
