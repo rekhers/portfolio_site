@@ -1,13 +1,13 @@
+require 'json'
 class StaticsController < ApplicationController
-  respond_to :html, :json
   
-  def index 
-      
+  def index   
+  
   end
   
-  def load
-    $data = File.read("app/public/tx-counties.geojson")
-      render :json => $data
+  def maps
+    render "maps"
   end
   
+ 
 end
